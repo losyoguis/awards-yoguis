@@ -5,10 +5,15 @@ El reproductor necesita que la presentación se sirva desde una dirección web.
 
 MAC
 1. Descomprime esta carpeta.
-2. Abre Iniciar_Premios_Yoguis.command.
-3. Si macOS muestra una advertencia, haz clic derecho en el archivo y elige Abrir.
-4. Se abrirá la presentación en el navegador. Deja abierta la ventana de Terminal.
-5. Para cerrar el servidor, vuelve a Terminal y presiona Ctrl+C.
+2. En Finder, haz clic derecho (o Control + clic) en Iniciar_Premios_Yoguis.command y elige Abrir.
+3. Si aparece una segunda confirmación de macOS, elige Abrir.
+4. Si no aparece esa opción: Ajustes del Sistema > Privacidad y seguridad; baja hasta Seguridad y pulsa Abrir igualmente junto al aviso del iniciador. Confirma Abrir.
+5. Se abrirá la presentación en el navegador. Deja abierta la ventana de Terminal.
+6. Para cerrar el servidor, vuelve a Terminal y presiona Ctrl+C.
+
+macOS muestra este aviso porque el iniciador no está firmado ni notarizado por Apple.
+El iniciador ejecuta el servidor local incluido en esta carpeta. Continúa solo si
+confías en el archivo y lo descargaste de la fuente esperada.
 
 WINDOWS
 1. Descomprime esta carpeta.
