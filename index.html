@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#100b0b" />
+  <meta name="description" content="Programa de gala de los Premios Yoguis: una noche para celebrar el cine escolar y el talento joven." />
+  <link rel="icon" type="image/png" href="estatuilla-yoguis.png" />
+  <link rel="apple-touch-icon" href="estatuilla-yoguis.png" />
+  <title>Premios Yoguis · Gala de Cine Escolar</title>
+  <style>
+    :root{--ink:#100b0b;--wine:#321012;--wine2:#5a191b;--gold:#e7bf70;--gold2:#f5dfa8;--cream:#f5efe3;--muted:#bdb2a3;--line:rgba(231,191,112,.25);--serif:Georgia,'Times New Roman',serif;--sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--cream);font-family:var(--sans);line-height:1.55}button,a{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}.wrap{width:min(1160px,calc(100% - 42px));margin:auto}.topbar{position:absolute;inset:0 0 auto;z-index:3;height:82px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.12)}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;gap:12px;align-items:center;font-size:.83rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}.brand-mark{width:39px;height:39px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-family:var(--serif);font-size:1.18rem}.nav-links{display:flex;gap:27px;color:#ded5c6;font-size:.88rem}.nav-links a:hover{color:var(--gold2)}.nav-cta,.button{border:1px solid var(--gold);color:var(--cream);background:transparent;border-radius:3px;padding:12px 18px;transition:.2s}.nav-cta:hover,.button:hover{background:var(--gold);color:#1a100b}.hero{min-height:750px;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 73% 52%,rgba(145,48,37,.34),transparent 31%),radial-gradient(ellipse at 13% 88%,rgba(145,97,42,.14),transparent 34%),linear-gradient(115deg,#100b0b 16%,#211011 60%,#180c0d)}.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(110deg,transparent 48%,rgba(231,191,112,.08) 48.2%,transparent 48.5%),radial-gradient(rgba(255,255,255,.17) .55px,transparent .7px);background-size:100% 100%,8px 8px;opacity:.2;mask-image:linear-gradient(90deg,transparent,#000 72%)}.hero-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;padding:145px 0 92px}.eyebrow{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:.73rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700}.eyebrow:before{content:"";width:34px;height:1px;background:var(--gold)}h1,h2,h3,p{margin-top:0}h1{font:clamp(3.7rem,8vw,7.7rem)/.91 var(--serif);letter-spacing:-.065em;margin:22px 0 22px;max-width:750px}h1 span{display:block;color:var(--gold2);font-style:italic;font-size:.74em;letter-spacing:-.04em;margin-top:12px}.hero-copy{max-width:510px;color:#d4c9b9;font-size:1.07rem}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.button.primary{background:var(--gold);color:#1b110b;font-weight:750}.button.primary:hover{background:var(--gold2)}.hero-meta{margin-top:40px;display:flex;gap:28px;flex-wrap:wrap;color:var(--muted);font-size:.83rem}.hero-meta strong{display:block;color:var(--cream);font-size:.94rem;margin-bottom:3px}.award-art{min-height:450px;display:grid;place-items:center;position:relative}.statuette{position:relative;filter:drop-shadow(0 20px 22px rgba(0,0,0,.4));width:min(100%,410px);max-height:440px;height:auto;object-fit:contain;animation:float 5s ease-in-out infinite}.spotlight{position:absolute;width:190px;height:440px;background:linear-gradient(180deg,rgba(255,224,166,.16),transparent);filter:blur(32px);transform:rotate(18deg);top:0}.art-caption{position:absolute;bottom:20px;color:#bdaa88;text-transform:uppercase;letter-spacing:.2em;font-size:.66rem}.section{padding:104px 0}.section-heading{max-width:670px;margin-bottom:48px}.section-heading h2{font:clamp(2.5rem,5vw,4.4rem)/1.04 var(--serif);letter-spacing:-.04em;margin:13px 0}.section-heading p{color:var(--muted);max-width:600px}.intro{background:var(--cream);color:#211717}.intro-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start}.intro .eyebrow{color:#8a6228}.intro .eyebrow:before{background:#8a6228}.intro h2{font:clamp(2.4rem,4vw,3.7rem)/1.08 var(--serif);letter-spacing:-.04em}.intro-copy{font:1.12rem/1.9 var(--serif);color:#51443d}.quote{border-left:2px solid #b88740;margin-top:27px;padding:9px 0 9px 20px;font:italic 1.28rem var(--serif);color:#694d2b}.program{background:linear-gradient(180deg,#171010,#100b0b)}.program-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:48px}.program-head .section-heading{margin:0}.tag{border:1px solid var(--line);color:var(--gold2);padding:9px 13px;border-radius:99px;font-size:.75rem;white-space:nowrap}.timeline{position:relative;max-width:920px}.timeline:before{content:"";position:absolute;left:21px;top:8px;bottom:10px;width:1px;background:linear-gradient(var(--gold),rgba(231,191,112,.12))}.moment{display:grid;grid-template-columns:44px 1fr;gap:22px;padding:0 0 29px;position:relative}.node{z-index:1;width:43px;height:43px;display:grid;place-items:center;border:1px solid var(--gold);border-radius:50%;background:#160e0e;color:var(--gold);font:1rem var(--serif)}.moment-card{border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.025);padding:19px 23px;border-radius:5px;display:flex;justify-content:space-between;gap:25px;align-items:center}.moment-card h3{font:1.38rem var(--serif);margin:0 0 4px}.moment-card p{color:var(--muted);font-size:.91rem;margin:0;max-width:650px}.kind{color:var(--gold);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}.awards{background:#eee5d5;color:#201515}.awards .section-heading p{color:#655951}.awards .eyebrow{color:#8a6228}.awards .eyebrow:before{background:#8a6228}.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.category{min-height:174px;border:1px solid rgba(78,43,32,.2);padding:23px 20px;position:relative;overflow:hidden;background:#f8f2e8;transition:transform .25s,box-shadow .25s}.category:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(53,26,15,.1)}.category:after{content:"";position:absolute;width:90px;height:90px;border:1px solid rgba(164,117,53,.18);border-radius:50%;right:-40px;bottom:-50px}.category .num{color:#a67937;font:italic 1rem var(--serif)}.category h3{font:1.34rem/1.12 var(--serif);margin:23px 0 7px}.category p{font-size:.78rem;color:#796c60;margin:0}.screen-cta{background:linear-gradient(105deg,#401313,#1c0d0d 69%);text-align:center;padding:95px 0}.screen-cta h2{font:clamp(2.6rem,5vw,4.5rem)/1.05 var(--serif);letter-spacing:-.04em;margin:15px auto;max-width:700px}.screen-cta p{color:#d2c5b4;max-width:580px;margin:0 auto 26px}.footer{padding:30px 0;border-top:1px solid rgba(255,255,255,.1);color:#9e9182;font-size:.78rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer strong{color:var(--cream)}.small-note{font-size:.75rem;color:var(--muted);margin-top:22px}.presenter{position:fixed;inset:0;background:radial-gradient(ellipse at center,rgba(100,33,27,.52),transparent 65%),#100b0b;z-index:10;display:none;align-items:center;justify-content:center;text-align:center;padding:5vw}.presenter.open{display:flex}.presenter-content{width:min(900px,100%)}.presenter-kicker{color:var(--gold);font-size:.85rem;letter-spacing:.22em;text-transform:uppercase}.presenter h2{font:clamp(3.1rem,9vw,7.6rem)/.98 var(--serif);letter-spacing:-.04em;margin:24px 0}.presenter p{font-size:clamp(1rem,2vw,1.3rem);color:#d5cabc;max-width:670px;margin:0 auto}.presenter-count{color:#a79783;margin-top:39px;font-size:.82rem}.presenter-controls{display:flex;justify-content:center;gap:12px;margin-top:25px;flex-wrap:wrap}.presenter .button{min-width:130px}.presenter .button.primary{color:#1b110b}.close-presenter{position:absolute;right:24px;top:22px;border:1px solid rgba(255,255,255,.25);border-radius:50%;width:44px;height:44px;color:white;background:transparent;font-size:1.4rem}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    @media(max-width:850px){.hero-grid{grid-template-columns:1fr .7fr}.hero{min-height:690px}.award-art{min-height:360px}.category-grid{grid-template-columns:repeat(2,1fr)}.intro-grid{gap:42px}.nav-links{gap:14px}.nav-cta{display:none}}
+    @media(max-width:620px){.wrap{width:min(100% - 34px,1160px)}.topbar{height:70px}.nav-links{display:none}.hero{min-height:auto}.hero-grid{grid-template-columns:1fr;padding:130px 0 55px}.hero h1{font-size:clamp(3.7rem,17vw,6.1rem)}.hero-copy{font-size:.97rem}.hero-meta{gap:18px}.award-art{min-height:270px;grid-row:1;margin-bottom:15px}.halo{width:245px}.statuette{width:145px}.spotlight{height:270px}.art-caption{bottom:3px}.section{padding:75px 0}.intro-grid{grid-template-columns:1fr;gap:16px}.program-head{display:block}.tag{display:inline-block;margin-top:22px}.moment{gap:13px;grid-template-columns:38px 1fr}.timeline:before{left:18px}.node{width:37px;height:37px}.moment-card{padding:16px;display:block}.kind{display:block;margin-top:10px}.category-grid{gap:10px}.category{min-height:152px;padding:17px 15px}.category h3{font-size:1.2rem}.screen-cta{padding:75px 0}.footer-inner{display:block}.footer-inner span{display:block;margin:7px 0}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+  </style>
+  <style>
+    .brand-mark{width:42px;height:48px;border:0;border-radius:0;overflow:visible}
+    .brand-mark img{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 4px rgba(231,191,112,.45))}
+    .intro,.program,.awards,.screen-cta{position:relative;isolation:isolate;overflow:hidden}
+    .intro>.wrap,.program>.wrap,.awards>.wrap,.screen-cta>.wrap{position:relative;z-index:1}
+    .intro:after,.program:after,.awards:after,.screen-cta:after{content:"";position:absolute;z-index:0;background:url("estatuilla-yoguis.png") center/contain no-repeat;pointer-events:none}
+    .intro:after{right:-14px;top:5%;width:260px;height:310px;opacity:.09}
+    .program:after{left:-58px;top:28%;width:270px;height:310px;opacity:.07}
+    .awards:after{right:-50px;bottom:-65px;width:300px;height:340px;opacity:.1}
+    .screen-cta:after{left:calc(50% - 160px);top:-62px;width:320px;height:365px;opacity:.1}
+    .moment-card{position:relative;overflow:hidden}
+    .moment-card:after{content:"";position:absolute;z-index:0;right:9px;top:50%;transform:translateY(-50%);width:53px;height:60px;background:url("estatuilla-yoguis.png") center/contain no-repeat;opacity:.19;pointer-events:none}
+    .moment-card>div,.moment-card>.kind{position:relative;z-index:1}
+    .category:before{content:"";position:absolute;z-index:0;right:8px;bottom:0;width:83px;height:96px;background:url("estatuilla-yoguis.png") center/contain no-repeat;opacity:.15;pointer-events:none}
+    .category>*{position:relative;z-index:1}
+    .presenter:before{content:"";position:absolute;inset:0;background:url("estatuilla-yoguis.png") center/auto 70% no-repeat;opacity:.09;pointer-events:none}
+    .presenter-content{position:relative;z-index:1}
+    @media(max-width:620px){.brand-mark{width:34px;height:41px}.intro:after{width:165px;height:195px;right:-35px;top:18%;opacity:.08}.program:after{left:-90px;width:200px;height:235px}.awards:after{width:205px;height:240px;right:-75px;opacity:.08}.screen-cta:after{left:calc(50% - 115px);width:230px;height:265px}.presenter:before{background-size:auto 55%;opacity:.07}}
+  </style>
+  <style>
+    .presenter:before{display:none}
+    .presenter.has-video .presenter-content{width:min(1180px,100%)}
+    .presenter.has-video .presenter-content h2{font:clamp(1.8rem,3.5vw,3rem)/1.08 var(--serif);margin:12px 0 16px}
+    .presenter-video{position:relative;width:min(100%,1080px);aspect-ratio:16/9;margin:0 auto 18px;overflow:hidden;border:1px solid rgba(231,191,112,.34);border-radius:7px;background:#080606;box-shadow:0 18px 55px rgba(0,0,0,.32)}
+    .presenter-video[hidden]{display:none}
+    .presenter-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    @media(max-width:620px){.presenter-video{border-radius:4px;margin-bottom:12px}.presenter.has-video .presenter-content h2{font-size:1.8rem}}
+  </style>
+  <style>
+    .presenter{padding:0;background:#090607;overflow:hidden}
+    .presenter:before{display:none}
+    .close-presenter{z-index:6;top:20px;right:22px;width:44px;height:44px;border-color:rgba(246,215,151,.58);background:rgba(22,8,10,.72);color:#f8e6c2}
+    .fullscreen-presenter{position:absolute;z-index:6;top:24px;right:76px;width:36px;height:36px;display:grid;place-items:center;padding:0;border:1px solid rgba(246,215,151,.5);border-radius:4px;background:rgba(22,8,10,.68);color:#f8e6c2;font:22px/1 Arial,sans-serif;transition:background .2s,border-color .2s}
+    .fullscreen-presenter:hover{background:rgba(150,35,41,.82);border-color:#f2d28c}
+    .theater-stage{position:relative;isolation:isolate;display:grid;place-items:center;width:100vw;height:100vh;height:100svh;min-height:420px;overflow:hidden;background:radial-gradient(ellipse at 50% 36%,rgba(134,39,32,.38),transparent 50%),linear-gradient(180deg,#23090d 0%,#13090b 60%,#080607 100%)}
+    .theater-stage:before{content:"";position:absolute;z-index:-1;inset:0;background:radial-gradient(ellipse at 8% 5%,rgba(255,220,159,.27),transparent 27%),radial-gradient(ellipse at 92% 5%,rgba(255,220,159,.25),transparent 27%),linear-gradient(180deg,transparent 68%,rgba(0,0,0,.38))}
+    .theater-curtain{position:absolute;z-index:3;top:0;bottom:0;width:clamp(56px,8vw,148px);background:repeating-linear-gradient(90deg,#35070d 0 9px,#6e111c 10px 20px,#450911 21px 32px,#7b1721 33px 40px);box-shadow:inset -14px 0 22px rgba(0,0,0,.42),inset 4px 0 8px rgba(246,195,107,.2),0 0 32px rgba(0,0,0,.55)}
+    .theater-curtain:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.3),transparent 24%,rgba(255,184,126,.08) 48%,rgba(0,0,0,.32))}
+    .theater-curtain.left{left:0;border-right:2px solid rgba(222,170,81,.66)}
+    .theater-curtain.right{right:0;transform:scaleX(-1);border-right:2px solid rgba(222,170,81,.66)}
+    .theater-valance{position:absolute;z-index:4;left:0;right:0;top:0;height:clamp(34px,7vh,74px);background:repeating-linear-gradient(180deg,#771520 0 7px,#4e0b12 8px 15px,#8b1e2a 16px 22px);border-bottom:3px solid #c19147;clip-path:polygon(0 0,100% 0,100% 60%,93% 68%,86% 78%,78% 88%,70% 96%,62% 100%,50% 100%,38% 100%,30% 96%,22% 88%,14% 78%,7% 68%,0 60%);box-shadow:0 9px 27px rgba(0,0,0,.6)}
+    .theater-lights{position:absolute;z-index:4;left:12%;right:12%;top:clamp(35px,6.7vh,70px);height:12px;background:radial-gradient(circle,#ffe6ab 0 2px,rgba(250,193,93,.4) 3px,transparent 7px) left center/34px 12px repeat-x;filter:drop-shadow(0 0 6px rgba(255,204,117,.7));opacity:.9}
+    .theater-floor{position:absolute;z-index:0;left:8%;right:8%;bottom:-8%;height:29%;background:radial-gradient(ellipse at 50% 0%,rgba(207,153,73,.24),transparent 56%),linear-gradient(180deg,#260c11,#10080a 74%);clip-path:polygon(18% 0,82% 0,100% 100%,0 100%);border-top:1px solid rgba(221,174,98,.5)}
+    .theater-screen{position:relative;z-index:2;width:min(82vw,1400px,calc(76vh * 16 / 9));aspect-ratio:16/9;padding:clamp(5px,.8vw,12px);border:2px solid #e4bd6f;border-radius:5px;background:linear-gradient(135deg,#f5d998,#80521e 22%,#f5d998 46%,#996527 70%,#f1d38d);box-shadow:0 0 0 5px rgba(111,24,26,.75),0 0 0 7px rgba(213,166,88,.75),0 26px 70px rgba(0,0,0,.68),0 0 70px rgba(237,177,81,.19)}
+    .theater-screen:before{content:"";position:absolute;z-index:3;inset:4px;pointer-events:none;border:1px solid rgba(255,241,200,.35);border-radius:2px}
+    .theater-media{position:relative;width:100%;height:100%;overflow:hidden;background:#050405;box-shadow:inset 0 0 35px rgba(0,0,0,.7)}
+    .theater-media iframe,.theater-media img{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:contain;background:#050405}
+    .theater-media [hidden]{display:none!important}
+    .theater-empty{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(88,24,28,.22),transparent 65%),#090708}
+    .stage-trophy{position:absolute;z-index:2;bottom:clamp(42px,10vh,110px);width:clamp(52px,7vw,112px);height:clamp(78px,15vh,174px);object-fit:contain;filter:drop-shadow(0 5px 12px rgba(237,180,84,.45));pointer-events:none}
+    .stage-trophy.left{left:clamp(14px,11vw,190px)}
+    .stage-trophy.right{right:clamp(14px,11vw,190px)}
+    .stage-arrow{position:absolute;z-index:5;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:52px;height:68px;border:1px solid rgba(239,204,135,.65);border-radius:4px;background:rgba(25,9,12,.72);color:#f3d99e;font:2.5rem/1 var(--serif);box-shadow:0 8px 25px rgba(0,0,0,.3);transition:background .2s,transform .2s}
+    .stage-arrow:hover{background:rgba(139,35,42,.92);transform:translateY(-50%) scale(1.04)}
+    .stage-arrow:disabled{opacity:.35;cursor:default}
+    .stage-arrow.prev{left:clamp(12px,3.2vw,52px)}.stage-arrow.next{right:clamp(12px,3.2vw,52px)}
+    .stage-progress{position:absolute;z-index:5;left:16%;right:16%;bottom:clamp(15px,3vh,32px);height:3px;border-radius:9px;background:rgba(244,224,188,.2);overflow:hidden}
+    .stage-progress span{display:block;width:10%;height:100%;background:linear-gradient(90deg,#c99142,#ffe6a8);box-shadow:0 0 12px rgba(255,210,129,.75);transition:width .35s ease}
+    .stage-count{position:absolute;z-index:5;left:50%;bottom:clamp(36px,5vh,48px);transform:translateX(-50%);padding:3px 9px;border:1px solid rgba(232,199,126,.32);border-radius:3px;background:rgba(18,7,9,.7);color:#f2dda9;font:600 11px/1.2 var(--sans);letter-spacing:.18em;text-shadow:0 1px 6px #000;pointer-events:none}
+    @media(max-width:700px){.theater-stage{min-height:380px}.theater-curtain{width:clamp(33px,7vw,54px)}.theater-valance{height:42px}.theater-lights{left:14%;right:14%;top:40px;height:8px;background-size:25px 8px}.theater-screen{width:min(84vw,calc(68vh * 16 / 9));padding:4px}.stage-trophy{bottom:13%;width:clamp(36px,8vw,58px);height:clamp(54px,13vh,94px)}.stage-trophy.left{left:3px}.stage-trophy.right{right:3px}.stage-arrow{width:38px;height:50px;font-size:1.9rem}.stage-arrow.prev{left:8px}.stage-arrow.next{right:8px}.stage-progress{left:24%;right:24%;bottom:12px}.close-presenter{top:10px;right:10px;width:38px;height:38px}.fullscreen-presenter{top:11px;right:56px;width:34px;height:34px}}
+    /* Gala projection polish: a deeper proscenium and clear side display for the official statuette. */
+    .theater-stage{background:radial-gradient(ellipse at 50% 44%,rgba(139,42,32,.35),transparent 38%),radial-gradient(ellipse at 50% 100%,rgba(177,118,48,.18),transparent 47%),linear-gradient(180deg,#2b080d 0%,#18090c 64%,#080607 100%)}
+    .theater-stage:before{z-index:0;background:radial-gradient(ellipse at 50% 12%,rgba(255,219,155,.14),transparent 24%),radial-gradient(ellipse at 7% 40%,rgba(255,207,129,.15),transparent 18%),radial-gradient(ellipse at 93% 40%,rgba(255,207,129,.15),transparent 18%),linear-gradient(180deg,transparent 69%,rgba(0,0,0,.52))}
+    .theater-stage:after{content:"";position:absolute;z-index:0;inset:0;pointer-events:none;background:linear-gradient(112deg,transparent 8%,rgba(255,216,153,.055) 18%,transparent 29%),linear-gradient(248deg,transparent 8%,rgba(255,216,153,.055) 18%,transparent 29%),radial-gradient(ellipse at 50% 100%,transparent 31%,rgba(0,0,0,.3) 100%)}
+    .theater-curtain{width:clamp(82px,10vw,205px);background:repeating-linear-gradient(90deg,#32050c 0 11px,#570b15 12px 22px,#791522 23px 31px,#4a0911 32px 42px,#891d29 43px 49px,#48080f 50px 61px);box-shadow:inset -20px 0 27px rgba(0,0,0,.52),inset 7px 0 13px rgba(241,190,109,.18),0 0 44px rgba(0,0,0,.6)}
+    .theater-curtain.left{border-right:3px solid #b98742}.theater-curtain.right{border-right:3px solid #b98742}
+    .theater-curtain:after{background:linear-gradient(90deg,rgba(0,0,0,.42),transparent 22%,rgba(255,192,125,.12) 48%,rgba(0,0,0,.36)),linear-gradient(180deg,rgba(255,222,164,.08),transparent 23%,rgba(0,0,0,.15))}
+    .theater-valance{height:clamp(60px,9vh,102px);background:repeating-linear-gradient(180deg,#70111b 0 10px,#490811 11px 20px,#8b1b28 21px 29px,#5d0b15 30px 39px);border-bottom:4px solid #c2944c;filter:drop-shadow(0 8px 12px rgba(0,0,0,.52))}
+    .theater-lights{top:clamp(57px,8.7vh,98px);height:18px;background:radial-gradient(circle,#fff0c5 0 2.5px,rgba(255,204,116,.62) 3px,transparent 9px) left center/42px 18px repeat-x;filter:drop-shadow(0 0 8px rgba(255,205,115,.9));opacity:1}
+    .theater-screen{z-index:3;width:min(76vw,1280px,calc(73vh * 16 / 9));padding:clamp(7px,.75vw,13px);border:3px solid #e8c77e;border-radius:4px;background:linear-gradient(135deg,#fff0bf 0%,#9b672c 12%,#f0ce82 25%,#75431a 48%,#f6dda0 68%,#8a581f 84%,#ffedb4 100%);box-shadow:0 0 0 2px #581018,0 0 0 6px rgba(214,169,86,.82),0 0 0 10px rgba(69,9,15,.75),0 25px 80px rgba(0,0,0,.76),0 0 95px rgba(237,177,81,.24)}
+    .theater-screen:before{inset:5px;border-color:rgba(255,244,207,.48)}
+    .theater-media{box-shadow:inset 0 0 45px rgba(0,0,0,.7),0 0 22px rgba(0,0,0,.35)}
+    .stage-trophy{z-index:4;bottom:clamp(62px,12vh,138px);width:clamp(70px,8vw,148px);height:clamp(102px,21vh,232px);filter:drop-shadow(0 8px 15px rgba(241,185,88,.56)) drop-shadow(0 3px 2px rgba(0,0,0,.6))}
+    .stage-trophy.left{left:clamp(15px,3.5vw,70px)}.stage-trophy.right{right:clamp(15px,3.5vw,70px)}
+    .theater-floor{z-index:1;left:7%;right:7%;bottom:-6%;height:26%;background:radial-gradient(ellipse at 50% 0%,rgba(241,193,105,.32),transparent 54%),linear-gradient(180deg,#391018,#16090d 73%);border-top:2px solid rgba(229,186,108,.65);filter:drop-shadow(0 -6px 22px rgba(229,176,87,.12))}
+    .stage-progress{height:3px;background:rgba(244,218,167,.25);box-shadow:0 0 11px rgba(255,214,139,.2)}.stage-progress span{background:linear-gradient(90deg,#a76c2b,#f9dfa0,#bd873d);box-shadow:0 0 12px rgba(255,211,133,.8)}
+    .stage-arrow{border-color:rgba(232,199,126,.65);background:rgba(20,7,10,.48);box-shadow:0 4px 18px rgba(0,0,0,.25);backdrop-filter:blur(5px)}.stage-arrow:hover{background:rgba(150,35,41,.75);border-color:#f2d28c}
+    @media(max-width:700px){.theater-curtain{width:clamp(36px,8vw,62px)}.theater-valance{height:48px}.theater-lights{top:45px;height:10px;background-size:28px 10px}.theater-screen{width:min(82vw,calc(67vh * 16 / 9));padding:5px}.stage-trophy{bottom:clamp(44px,9vh,78px);width:clamp(35px,10vw,61px);height:clamp(58px,14vh,105px)}.stage-trophy.left{left:3px}.stage-trophy.right{right:3px}.theater-floor{left:3%;right:3%;height:22%}.stage-count{bottom:24px;font-size:10px}}
+    @media(prefers-reduced-motion:reduce){.stage-arrow,.stage-progress span{transition:none}}
+  </style>
+  <style>
+    /* Giro lento de las estatuillas; la flotación del hero sigue funcionando. */
+    @keyframes yoguis-turn { to { rotate: y 1turn; } }
+    .award-art, .brand-mark, .theater-stage,
+    .intro, .program, .awards, .screen-cta, .moment-card, .category { perspective: 1000px; }
+    .statuette { animation: float 5s ease-in-out infinite, yoguis-turn 28s linear infinite; transform-style: preserve-3d; }
+    .brand-mark img, .stage-trophy,
+    .intro:after, .program:after, .awards:after, .screen-cta:after,
+    .moment-card:after, .category:before { animation: yoguis-turn 28s linear infinite; transform-style: preserve-3d; }
+    @media (prefers-reduced-motion: reduce) {
+      .statuette, .brand-mark img, .stage-trophy,
+      .intro:after, .program:after, .awards:after, .screen-cta:after,
+      .moment-card:after, .category:before { animation: none; }
+    }
+  </style>
+  <style>
+    .theater-curtain { transition: transform 1.25s cubic-bezier(.7,0,.2,1); }
+    .presenter.curtains-open .theater-curtain.left { transform: translateX(-105%); }
+    .presenter.curtains-open .theater-curtain.right { transform: translateX(105%) scaleX(-1); }
+    .theater-lights { transition: opacity 1s ease, filter 1s ease; opacity: .62; }
+    .presenter.curtains-open .theater-lights { opacity: 1; filter: drop-shadow(0 0 11px rgba(255,205,115,.95)); }
+    .theater-screen { transition: opacity .38s ease, transform .38s ease, filter .38s ease; }
+    .theater-screen.switching { opacity: .16; transform: scale(.985); filter:brightness(.55); }
+    .stage-count { bottom: clamp(29px,4.4vh,42px); padding: 6px 12px; border: 1px solid rgba(237,203,133,.62); border-radius: 999px; background: rgba(22,9,11,.78); box-shadow: 0 4px 18px rgba(0,0,0,.28), inset 0 0 10px rgba(227,183,98,.08); backdrop-filter: blur(8px); font-size: 10px; letter-spacing: .2em; }
+    .stage-progress { bottom: clamp(15px,2.3vh,24px); }
+    .close-presenter, .fullscreen-presenter, .stage-arrow { transition: opacity .35s ease, background .2s, border-color .2s, transform .2s; }
+    .presenter.controls-hidden .close-presenter, .presenter.controls-hidden .fullscreen-presenter, .presenter.controls-hidden .stage-arrow { opacity: 0; pointer-events: none; }
+    .presenter.controls-hidden button:focus-visible { opacity: 1; pointer-events: auto; }
+    .presenter.finale .theater-screen { opacity: 0; transform: scale(.965); filter:brightness(.35); pointer-events: none; }
+    .presenter.finale .stage-trophy { scale: 1.1; filter: brightness(1.42) drop-shadow(0 0 28px rgba(255,213,132,.92)); transition: scale 1s ease, filter 1s ease; }
+    .stream-toggle { position:absolute; z-index:6; top:24px; right:124px; height:36px; display:flex; align-items:center; gap:7px; padding:0 11px; border:1px solid rgba(246,215,151,.5); border-radius:4px; background:rgba(22,8,10,.72); color:#f8e6c2; font:600 11px/1 var(--sans); letter-spacing:.08em; transition:opacity .35s ease,background .2s,border-color .2s; }
+    .stream-toggle:hover,.stream-toggle[aria-pressed="true"] { background:rgba(126,37,34,.78); border-color:#f2d28c; }
+    .stream-toggle .stream-icon { color:#f5cf83; font-size:14px; }
+    .stream-monitor { position:absolute; z-index:4; top:50%; width:min(15vw,230px); aspect-ratio:16/9; transform:translateY(-50%); padding:5px; border:1px solid #e8c77e; border-radius:4px; background:linear-gradient(135deg,#fff0bf,#99672e 30%,#f2d48f 52%,#75431a 78%,#ffedb4); box-shadow:0 0 0 2px rgba(84,14,21,.86),0 12px 34px rgba(0,0,0,.62),0 0 25px rgba(237,177,81,.22); overflow:hidden; }
+    .stream-monitor.left { left:2.5vw; }
+    .stream-monitor.right { right:2.5vw; }
+    .stream-monitor[hidden] { display:none !important; }
+    .stream-monitor iframe { display:block; width:100%; height:100%; border:0; background:#050405; }
+    .theater-stage.stream-enabled .theater-screen { width:min(60vw,1100px,calc(67vh * 16 / 9)); }
+    .presenter.controls-hidden .stream-toggle { opacity:0; pointer-events:none; }
+    .presenter.controls-hidden .stream-toggle:focus-visible { opacity:1; pointer-events:auto; }
+    @media (prefers-reduced-motion: reduce) {
+      .theater-curtain, .theater-lights, .theater-screen, .close-presenter, .fullscreen-presenter, .stage-arrow,
+      .presenter.finale .stage-trophy { transition-duration: .01ms !important; }
+    }
+    @media(max-width:700px) {
+      .stream-toggle { top:11px; right:100px; width:36px; height:34px; justify-content:center; padding:0; }
+      .stream-toggle .stream-label { display:none; }
+      .stream-monitor { top:clamp(68px,10vh,108px); width:clamp(78px,19vw,132px); padding:3px; transform:none; }
+      .stream-monitor.left { left:5px; }
+      .stream-monitor.right { right:5px; }
+      .theater-stage.stream-enabled .theater-screen { width:min(82vw,calc(67vh * 16 / 9)); }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar"><nav class="nav wrap" aria-label="Navegación principal">
+    <a class="brand" href="#inicio" aria-label="Premios Yoguis, inicio"><span class="brand-mark"><img src="estatuilla-yoguis.png" alt="" /></span><span>Premios Yoguis</span></a>
+    <div class="nav-links"><a href="#gala">La gala</a><a href="#programa">Programa</a><a href="#categorias">Categorías</a></div>
+    <a class="nav-cta" href="#proyeccion">Modo proyección</a>
+  </nav></header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-grid wrap">
+        <div>
+          <div class="eyebrow">XV Festival de Cine Escolar · 2026</div>
+          <h1>La noche<br>de los <span>Premios Yoguis</span></h1>
+          <p class="hero-copy">Una gala para celebrar las historias, las ideas y el talento que nacen en nuestras aulas. El cine escolar se viste de gala.</p>
+          <div class="hero-actions"><a class="button primary" href="#programa">Ver el orden de la gala</a><button class="button" data-start>Iniciar proyección</button></div>
+          <div class="hero-meta"><div><strong>14 de noviembre de 2026</strong>Fecha de la gala</div><div><strong>Parque Biblioteca José Horacio Betancur</strong>San Antonio de Prado</div></div>
+        </div>
+        <div class="award-art" aria-label="Estatuilla oficial de los Premios Yoguis">
+          <div class="spotlight"></div>
+          <img class="statuette" src="estatuilla-yoguis.png" alt="Estatuilla oficial de los Premios Yoguis" />
+          <div class="art-caption">Historias que merecen brillar</div>
+        </div>
+      </div>
+    </section>
+    <section class="section intro" id="gala"><div class="wrap intro-grid">
+      <div><div class="eyebrow">Una celebración hecha en comunidad</div><h2>El talento joven merece una gran pantalla.</h2></div>
+      <div class="intro-copy"><p>Los Premios Yoguis reconocen el trabajo audiovisual de estudiantes que cuentan, imaginan y crean desde la escuela. Esta noche reúne a quienes estuvieron detrás de cada historia: estudiantes, familias, docentes y comunidad.</p><p>La estatuilla es el símbolo de una experiencia compartida: aprender haciendo, narrar desde lo propio y descubrir nuevas voces.</p><div class="quote">“Servir sin esperar nada a cambio”.</div></div>
+    </div></section>
+    <section class="section program" id="programa"><div class="wrap">
+      <div class="program-head"><div class="section-heading"><div class="eyebrow">La ruta de la noche</div><h2>Orden sugerido de la gala</h2><p>Una secuencia base para conducir la ceremonia. Los horarios, presentadores y piezas audiovisuales se pueden completar cuando estén definidos.</p></div><span class="tag">Propuesta editable · sin horarios asignados</span></div>
+      <div class="timeline" id="timeline"></div>
+      <p class="small-note">El orden puede ajustarse a la duración, los invitados y las necesidades técnicas del evento.</p>
+    </div></section>
+    <section class="section awards" id="categorias"><div class="wrap">
+      <div class="section-heading"><div class="eyebrow">En competencia</div><h2>Siete formas de contar una historia.</h2><p>Estas son las categorías mencionadas para la premiación. Los títulos nominados y los nombres de sus creadores se añadirán cuando estén confirmados.</p></div>
+      <div class="category-grid" id="categories"></div>
+    </div></section>
+    <section class="screen-cta" id="proyeccion"><div class="wrap"><div class="eyebrow" style="justify-content:center">Lista para la pantalla grande</div><h2>Conduce la gala, momento a momento.</h2><p>Activa el modo proyección para mostrar cada parte de la ceremonia en pantalla completa. Usa las flechas para avanzar o retroceder.</p><button class="button primary" data-start>Entrar al modo proyección</button></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span><strong>Premios Yoguis</strong> · XV Festival de Cine Escolar 2026</span><span>Una celebración del cine creado en la escuela</span></div></footer>
+  <section class="presenter" id="presenter" role="dialog" aria-modal="true" aria-label="Proyección de gala" aria-hidden="true">
+    <button class="stream-toggle" type="button" data-stream-toggle aria-pressed="true" aria-label="Ocultar pantallas de streaming" title="Ocultar pantallas de streaming"><span class="stream-icon" aria-hidden="true">◉</span><span class="stream-label">Streaming</span></button>
+    <button class="fullscreen-presenter" type="button" aria-label="Activar pantalla completa" title="Pantalla completa" data-fullscreen>⛶</button>
+    <button class="close-presenter" aria-label="Cerrar proyección" data-close>×</button>
+    <div class="theater-stage">
+      <div class="theater-valance" aria-hidden="true"></div><div class="theater-lights" aria-hidden="true"></div>
+      <div class="stream-monitor left" data-stream-panel hidden><iframe data-stream-frame data-stream-src="https://www.youtube.com/embed/TTiQdtAzgxU?autoplay=1&amp;mute=1&amp;playsinline=1&amp;rel=0" title="Transmisión en vivo, pantalla izquierda" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+      <div class="stream-monitor right" data-stream-panel hidden><iframe data-stream-frame data-stream-src="https://www.youtube.com/embed/TTiQdtAzgxU?autoplay=1&amp;mute=1&amp;playsinline=1&amp;rel=0" title="Transmisión en vivo, pantalla derecha" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+      <div class="theater-curtain left" aria-hidden="true"></div><div class="theater-curtain right" aria-hidden="true"></div>
+      <img class="stage-trophy left" src="estatuilla-yoguis.png" alt="" aria-hidden="true" />
+      <img class="stage-trophy right" src="estatuilla-yoguis.png" alt="" aria-hidden="true" />
+      <div class="theater-screen"><div class="theater-media"><div class="theater-empty" id="slide-empty" aria-hidden="true"></div><img id="slide-image" alt="" hidden /><iframe id="slide-video" title="Video proyectado" allowfullscreen="allowfullscreen" allow="fullscreen; autoplay" hidden></iframe></div></div>
+      <div class="theater-floor" aria-hidden="true"></div>
+      <button class="stage-arrow prev" type="button" aria-label="Diapositiva anterior" data-prev>‹</button><button class="stage-arrow next" type="button" aria-label="Siguiente diapositiva" data-next>›</button>
+      <div class="stage-progress" aria-hidden="true"><span id="stage-progress-fill"></span></div>
+      <div class="stage-count" id="stage-count" aria-live="polite">01 / 10</div>
+    </div>
+  </section>
+  <script>
+    const moments=[
+      {title:'Bienvenida y apertura · Spelling Yoguis Bee',copy:'Recibimos a estudiantes, familias, docentes, invitados y comunidad en esta noche de celebración.',kind:'Inicio',video:'https://www.canva.com/design/DAG20F0NGlo/vpqoXUELo4hd7RpXqKTJwQ/watch?embed&autoplay=1'},
+      {title:'Presentación de los Premios Yoguis',copy:'Una breve introducción al festival, su propósito y el trabajo audiovisual que hoy llega a la gala.',kind:'Contexto',video:'https://www.canva.com/design/DAG20EXNMJI/o8oo4zxPCvLjIQ9RJAF81Q/watch?embed&autoplay=1'},
+      {title:'Primer bloque de nominaciones',copy:'Presentación de las obras nominadas en las categorías de mejor filminuto y mejor cortometraje.',kind:'Proyección',video:'https://www.canva.com/design/DAG20Pf81IE/a1Ui8mj_5hjwgXFqPCzpcw/watch?embed&autoplay=1'},
+      {title:'IndeVOZ',copy:'Presentación musical de IndeVOZ.',kind:'Presentación',video:'https://www.canva.com/design/DAHX0dI-DIw/iGq5PS3bVDvxIAc7hHFN9g/watch?embed&autoplay=1'},
+      {title:'Intermedio artístico',copy:'Pausa para compartir una presentación cultural y agradecer a quienes hacen posible el encuentro.',kind:'Pausa',video:'https://www.canva.com/design/DAHX0GXz6Oc/ljYhSsRbwDs2gHlhf5RY6A/watch?embed&autoplay=1'},
+      {title:'Segundo bloque de nominaciones',copy:'Presentación de las categorías de mejor documental, mejor actriz y mejor actor.',kind:'Proyección',video:'https://www.canva.com/design/DAHX0KdTLI4/nHql4u_mC70P5z1yDmqixw/watch?embed&autoplay=1'},
+      {title:'Premiación · Interpretación y documental',copy:'Anuncio de las personas y obras ganadoras de este bloque.',kind:'Premiación'},
+      {title:'Tercer bloque de nominaciones',copy:'Presentación de las categorías de mejor director y mejor editor.',kind:'Proyección'},
+      {title:'Premiación · Dirección y edición',copy:'Reconocimiento a quienes guiaron la creación y dieron forma final a cada historia.',kind:'Premiación'},
+      {title:'Gran cierre de la gala',copy:'Foto de la noche, agradecimientos finales y celebración de todas las personas participantes.',kind:'Cierre'}
+    ];
+    const categories=[['Mejor filminuto','Historias breves contadas con creatividad.'],['Mejor documental','Miradas que exploran historias y realidades.'],['Mejor cortometraje','Relatos audiovisuales de principio a fin.'],['Mejor actriz','Interpretaciones que dan vida a un personaje.'],['Mejor actor','Interpretaciones que dan vida a un personaje.'],['Mejor director','Visión y liderazgo detrás de una obra.'],['Mejor editor','Ritmo, continuidad y forma final de la historia.']];
+    const esc=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    document.querySelector('#timeline').innerHTML=moments.map((m,i)=>`<article class="moment"><div class="node">${String(i+1).padStart(2,'0')}</div><div class="moment-card"><div><h3>${esc(m.title)}</h3><p>${esc(m.copy)}</p></div><span class="kind">${esc(m.kind)}</span></div></article>`).join('');
+    document.querySelector('#categories').innerHTML=categories.map(([n,d],i)=>`<article class="category"><span class="num">0${i+1}</span><h3>${esc(n)}</h3><p>${esc(d)}</p></article>`).join('');
+    let current=0,slideSwapTimer,controlsTimer,closeTimer,streamingEnabled=true;const presenter=document.querySelector('#presenter');const theaterStage=document.querySelector('.theater-stage');const streamPanels=[...document.querySelectorAll('[data-stream-panel]')];const streamToggle=document.querySelector('[data-stream-toggle]');
+    function show(transition=false){const m=moments[current];const videoFrame=document.querySelector('#slide-video');const imageFrame=document.querySelector('#slide-image');const emptyFrame=document.querySelector('#slide-empty');const screen=document.querySelector('.theater-screen');const render=()=>{if(m.video){videoFrame.hidden=false;imageFrame.hidden=true;emptyFrame.hidden=true;if(videoFrame.src!==m.video)videoFrame.src=m.video}else if(m.image){videoFrame.hidden=true;videoFrame.src='about:blank';imageFrame.hidden=false;emptyFrame.hidden=true;imageFrame.src=m.image}else{videoFrame.hidden=true;videoFrame.src='about:blank';imageFrame.hidden=true;imageFrame.removeAttribute('src');emptyFrame.hidden=false}};clearTimeout(slideSwapTimer);if(transition){screen.classList.add('switching');slideSwapTimer=setTimeout(()=>{render();requestAnimationFrame(()=>screen.classList.remove('switching'))},190)}else{render();screen.classList.remove('switching')}document.querySelector('[data-prev]').disabled=current===0;document.querySelector('#stage-progress-fill').style.width=`${((current+1)/moments.length)*100}%`;document.querySelector('#stage-count').textContent=`${String(current+1).padStart(2,'0')} / ${String(moments.length).padStart(2,'0')}`}
+    function revealControls(){presenter.classList.remove('controls-hidden');clearTimeout(controlsTimer);if(presenter.classList.contains('open')&&!presenter.classList.contains('finale'))controlsTimer=setTimeout(()=>presenter.classList.add('controls-hidden'),3200)}
+    function setStreaming(enabled){streamingEnabled=enabled;theaterStage.classList.toggle('stream-enabled',enabled);streamPanels.forEach(panel=>{const frame=panel.querySelector('[data-stream-frame]');panel.hidden=!enabled;const src=frame.dataset.streamSrc;if(enabled){if(frame.src!==src)frame.src=src}else if(frame.src!=='about:blank')frame.src='about:blank'});streamToggle.setAttribute('aria-pressed',String(enabled));const label=enabled?'Ocultar pantallas de streaming':'Mostrar pantallas de streaming';streamToggle.setAttribute('aria-label',label);streamToggle.title=label}
+    function pauseStreaming(){streamPanels.forEach(panel=>{const frame=panel.querySelector('[data-stream-frame]');if(frame.src!=='about:blank')frame.src='about:blank'})}
+    streamToggle.addEventListener('click',()=>{setStreaming(!streamingEnabled);revealControls()});
+    function open(){clearTimeout(closeTimer);presenter.classList.remove('finale','closing','curtains-open','controls-hidden');setStreaming(streamingEnabled);current=0;show();presenter.classList.add('open');presenter.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';requestAnimationFrame(()=>requestAnimationFrame(()=>presenter.classList.add('curtains-open')));document.querySelector('[data-close]').focus();revealControls()}
+    function close(){if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});clearTimeout(closeTimer);clearTimeout(controlsTimer);pauseStreaming();presenter.classList.remove('curtains-open','controls-hidden','finale');presenter.classList.add('closing');presenter.setAttribute('aria-hidden','true');document.querySelector('#slide-video').src='about:blank';closeTimer=setTimeout(()=>{presenter.classList.remove('open','closing');document.body.style.overflow=''},1250)}
+    function finale(){clearTimeout(controlsTimer);presenter.classList.add('finale');presenter.classList.remove('curtains-open','controls-hidden');closeTimer=setTimeout(()=>{document.querySelector('#slide-video').src='about:blank';pauseStreaming();presenter.classList.remove('open','finale');presenter.setAttribute('aria-hidden','true');document.body.style.overflow=''},3200)}
+    presenter.addEventListener('pointermove',revealControls);presenter.addEventListener('pointerdown',revealControls);presenter.addEventListener('touchstart',revealControls,{passive:true});
+    const fullscreenButton=document.querySelector('[data-fullscreen]');
+    fullscreenButton.addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await presenter.requestFullscreen()}catch{fullscreenButton.title='El navegador no permitió activar pantalla completa'}});
+    document.addEventListener('fullscreenchange',()=>{const active=!!document.fullscreenElement;fullscreenButton.setAttribute('aria-label',active?'Salir de pantalla completa':'Activar pantalla completa');fullscreenButton.title=active?'Salir de pantalla completa':'Pantalla completa';fullscreenButton.textContent=active?'⛶':'⛶'});
+    document.querySelectorAll('[data-start]').forEach(b=>b.addEventListener('click',open));document.querySelector('[data-close]').addEventListener('click',close);
+    document.querySelector('[data-prev]').addEventListener('click',()=>{if(current>0){current--;show(true)}});
+    document.querySelector('[data-next]').addEventListener('click',()=>{if(current<moments.length-1){current++;show(true)}else{finale()}});
+    document.addEventListener('keydown',e=>{if(!presenter.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowRight'){if(current<moments.length-1){current++;show(true)}else finale()}if(e.key==='ArrowLeft'&&current>0){current--;show(true)}});
+  </script>
+</body>
+</html>
