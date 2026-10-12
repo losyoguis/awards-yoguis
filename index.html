@@ -153,8 +153,7 @@
 <body>
   <header class="topbar"><nav class="nav wrap" aria-label="Navegación principal">
     <a class="brand" href="#inicio" aria-label="Premios Yoguis, inicio"><span class="brand-mark"><img src="estatuilla-yoguis.png" alt="" /></span><span>Premios Yoguis</span></a>
-    <div class="nav-links"><a href="#gala">La gala</a><a href="#programa">Programa</a><a href="#categorias">Categorías</a></div>
-    <a class="nav-cta" href="#proyeccion">Modo proyección</a>
+    <button class="nav-cta" type="button" data-start>Modo proyección</button>
   </nav></header>
   <main>
     <section class="hero" id="inicio">
@@ -163,7 +162,7 @@
           <div class="eyebrow">XV Festival de Cine Escolar · 2026</div>
           <h1>La noche<br>de los <span>Premios Yoguis</span></h1>
           <p class="hero-copy">Una gala para celebrar las historias, las ideas y el talento que nacen en nuestras aulas. El cine escolar se viste de gala.</p>
-          <div class="hero-actions"><a class="button primary" href="#programa">Ver el orden de la gala</a><button class="button" data-start>Iniciar proyección</button></div>
+          <div class="hero-actions"><button class="button" data-start>Iniciar proyección</button></div>
           <div class="hero-meta"><div><strong>14 de noviembre de 2026</strong>Fecha de la gala</div><div><strong>Parque Biblioteca José Horacio Betancur</strong>San Antonio de Prado</div></div>
         </div>
         <div class="award-art" aria-label="Estatuilla oficial de los Premios Yoguis">
@@ -173,20 +172,6 @@
         </div>
       </div>
     </section>
-    <section class="section intro" id="gala"><div class="wrap intro-grid">
-      <div><div class="eyebrow">Una celebración hecha en comunidad</div><h2>El talento joven merece una gran pantalla.</h2></div>
-      <div class="intro-copy"><p>Los Premios Yoguis reconocen el trabajo audiovisual de estudiantes que cuentan, imaginan y crean desde la escuela. Esta noche reúne a quienes estuvieron detrás de cada historia: estudiantes, familias, docentes y comunidad.</p><p>La estatuilla es el símbolo de una experiencia compartida: aprender haciendo, narrar desde lo propio y descubrir nuevas voces.</p><div class="quote">“Servir sin esperar nada a cambio”.</div></div>
-    </div></section>
-    <section class="section program" id="programa"><div class="wrap">
-      <div class="program-head"><div class="section-heading"><div class="eyebrow">La ruta de la noche</div><h2>Orden sugerido de la gala</h2><p>Una secuencia base para conducir la ceremonia. Los horarios, presentadores y piezas audiovisuales se pueden completar cuando estén definidos.</p></div><span class="tag">Propuesta editable · sin horarios asignados</span></div>
-      <div class="timeline" id="timeline"></div>
-      <p class="small-note">El orden puede ajustarse a la duración, los invitados y las necesidades técnicas del evento.</p>
-    </div></section>
-    <section class="section awards" id="categorias"><div class="wrap">
-      <div class="section-heading"><div class="eyebrow">En competencia</div><h2>Siete formas de contar una historia.</h2><p>Estas son las categorías mencionadas para la premiación. Los títulos nominados y los nombres de sus creadores se añadirán cuando estén confirmados.</p></div>
-      <div class="category-grid" id="categories"></div>
-    </div></section>
-    <section class="screen-cta" id="proyeccion"><div class="wrap"><div class="eyebrow" style="justify-content:center">Lista para la pantalla grande</div><h2>Conduce la gala, momento a momento.</h2><p>Activa el modo proyección para mostrar cada parte de la ceremonia en pantalla completa. Usa las flechas para avanzar o retroceder.</p><button class="button primary" data-start>Entrar al modo proyección</button></div></section>
   </main>
   <footer class="footer"><div class="wrap footer-inner"><span><strong>Premios Yoguis</strong> · XV Festival de Cine Escolar 2026</span><span>Una celebración del cine creado en la escuela</span></div></footer>
   <section class="presenter" id="presenter" role="dialog" aria-modal="true" aria-label="Proyección de gala" aria-hidden="true">
@@ -204,7 +189,7 @@
       <div class="theater-floor" aria-hidden="true"></div>
       <button class="stage-arrow prev" type="button" aria-label="Diapositiva anterior" data-prev>‹</button><button class="stage-arrow next" type="button" aria-label="Siguiente diapositiva" data-next>›</button>
       <div class="stage-progress" aria-hidden="true"><span id="stage-progress-fill"></span></div>
-      <div class="stage-count" id="stage-count" aria-live="polite">01 / 10</div>
+      <div class="stage-count" id="stage-count" aria-live="polite">01 / 17</div>
     </div>
   </section>
   <script>
@@ -227,10 +212,6 @@
       {title:'Proyección 16',copy:'',kind:'Proyección',video:'https://www.canva.com/design/DAHX0Bheg_E/GYlnQv-6fyv6MO7uyK0ehQ/watch?embed&autoplay=1'},
       {title:'Proyección 17',copy:'',kind:'Proyección',video:'https://www.canva.com/design/DAHX0Ab1il0/OxDRCQLrXsQna9knzWF4ww/watch?embed&autoplay=1'}
     ];
-    const categories=[['Mejor filminuto','Historias breves contadas con creatividad.'],['Mejor documental','Miradas que exploran historias y realidades.'],['Mejor cortometraje','Relatos audiovisuales de principio a fin.'],['Mejor actriz','Interpretaciones que dan vida a un personaje.'],['Mejor actor','Interpretaciones que dan vida a un personaje.'],['Mejor director','Visión y liderazgo detrás de una obra.'],['Mejor editor','Ritmo, continuidad y forma final de la historia.']];
-    const esc=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-    document.querySelector('#timeline').innerHTML=moments.map((m,i)=>`<article class="moment"><div class="node">${String(i+1).padStart(2,'0')}</div><div class="moment-card"><div><h3>${esc(m.title)}</h3><p>${esc(m.copy)}</p></div><span class="kind">${esc(m.kind)}</span></div></article>`).join('');
-    document.querySelector('#categories').innerHTML=categories.map(([n,d],i)=>`<article class="category"><span class="num">0${i+1}</span><h3>${esc(n)}</h3><p>${esc(d)}</p></article>`).join('');
     let current=0,slideSwapTimer,controlsTimer,closeTimer,streamingEnabled=true;const presenter=document.querySelector('#presenter');const theaterStage=document.querySelector('.theater-stage');const streamPanels=[...document.querySelectorAll('[data-stream-panel]')];const streamToggle=document.querySelector('[data-stream-toggle]');
     function show(transition=false){const m=moments[current];const videoFrame=document.querySelector('#slide-video');const imageFrame=document.querySelector('#slide-image');const emptyFrame=document.querySelector('#slide-empty');const screen=document.querySelector('.theater-screen');const render=()=>{if(m.video){videoFrame.hidden=false;imageFrame.hidden=true;emptyFrame.hidden=true;if(videoFrame.src!==m.video)videoFrame.src=m.video}else if(m.image){videoFrame.hidden=true;videoFrame.src='about:blank';imageFrame.hidden=false;emptyFrame.hidden=true;imageFrame.src=m.image}else{videoFrame.hidden=true;videoFrame.src='about:blank';imageFrame.hidden=true;imageFrame.removeAttribute('src');emptyFrame.hidden=false}};clearTimeout(slideSwapTimer);if(transition){screen.classList.add('switching');slideSwapTimer=setTimeout(()=>{render();requestAnimationFrame(()=>screen.classList.remove('switching'))},190)}else{render();screen.classList.remove('switching')}document.querySelector('[data-prev]').disabled=current===0;document.querySelector('#stage-progress-fill').style.width=`${((current+1)/moments.length)*100}%`;document.querySelector('#stage-count').textContent=`${String(current+1).padStart(2,'0')} / ${String(moments.length).padStart(2,'0')}`}
     function revealControls(){presenter.classList.remove('controls-hidden');clearTimeout(controlsTimer);if(presenter.classList.contains('open')&&!presenter.classList.contains('finale'))controlsTimer=setTimeout(()=>presenter.classList.add('controls-hidden'),3200)}
