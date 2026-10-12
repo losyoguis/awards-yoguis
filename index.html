@@ -129,12 +129,12 @@
     .stream-toggle { position:absolute; z-index:6; top:24px; right:124px; height:36px; display:flex; align-items:center; gap:7px; padding:0 11px; border:1px solid rgba(246,215,151,.5); border-radius:4px; background:rgba(22,8,10,.72); color:#f8e6c2; font:600 11px/1 var(--sans); letter-spacing:.08em; transition:opacity .35s ease,background .2s,border-color .2s; }
     .stream-toggle:hover,.stream-toggle[aria-pressed="true"] { background:rgba(126,37,34,.78); border-color:#f2d28c; }
     .stream-toggle .stream-icon { color:#f5cf83; font-size:14px; }
-    .stream-monitor { position:absolute; z-index:4; top:50%; width:min(15vw,230px); aspect-ratio:16/9; transform:translateY(-50%); padding:5px; border:1px solid #e8c77e; border-radius:4px; background:linear-gradient(135deg,#fff0bf,#99672e 30%,#f2d48f 52%,#75431a 78%,#ffedb4); box-shadow:0 0 0 2px rgba(84,14,21,.86),0 12px 34px rgba(0,0,0,.62),0 0 25px rgba(237,177,81,.22); overflow:hidden; }
-    .stream-monitor.left { left:2.5vw; }
-    .stream-monitor.right { right:2.5vw; }
+    .stream-monitor { --stream-monitor-width:clamp(212px,16vw,250px); position:absolute; z-index:4; top:max(0px,calc(50% - 300px)); width:var(--stream-monitor-width); height:220px; padding:5px; border:1px solid #e8c77e; border-radius:4px; background:linear-gradient(135deg,#fff0bf,#99672e 30%,#f2d48f 52%,#75431a 78%,#ffedb4); box-shadow:0 0 0 2px rgba(84,14,21,.86),0 12px 34px rgba(0,0,0,.62),0 0 25px rgba(237,177,81,.22); overflow:hidden; }
+    .stream-monitor.left { left:calc((100vw - min(53vw,1000px,calc(64vh * 16 / 9)))/4 - var(--stream-monitor-width)/2); }
+    .stream-monitor.right { right:calc((100vw - min(53vw,1000px,calc(64vh * 16 / 9)))/4 - var(--stream-monitor-width)/2); }
     .stream-monitor[hidden] { display:none !important; }
     .stream-monitor iframe { display:block; width:100%; height:100%; border:0; background:#050405; }
-    .theater-stage.stream-enabled .theater-screen { width:min(60vw,1100px,calc(67vh * 16 / 9)); }
+    .theater-stage.stream-enabled .theater-screen { width:min(53vw,1000px,calc(64vh * 16 / 9)); }
     .presenter.controls-hidden .stream-toggle { opacity:0; pointer-events:none; }
     .presenter.controls-hidden .stream-toggle:focus-visible { opacity:1; pointer-events:auto; }
     @media (prefers-reduced-motion: reduce) {
@@ -144,10 +144,9 @@
     @media(max-width:700px) {
       .stream-toggle { top:11px; right:100px; width:36px; height:34px; justify-content:center; padding:0; }
       .stream-toggle .stream-label { display:none; }
-      .stream-monitor { top:clamp(68px,10vh,108px); width:clamp(78px,19vw,132px); padding:3px; transform:none; }
-      .stream-monitor.left { left:5px; }
-      .stream-monitor.right { right:5px; }
-      .theater-stage.stream-enabled .theater-screen { width:min(82vw,calc(67vh * 16 / 9)); }
+      .stream-monitor { top:clamp(58px,9vh,88px); left:50%; right:auto; width:min(82vw,280px); height:220px; padding:5px; transform:translateX(-50%); }
+      .stream-monitor.right { display:none; }
+      .theater-stage.stream-enabled .theater-screen { width:min(82vw,calc(58vh * 16 / 9)); }
     }
   </style>
 </head>
@@ -191,13 +190,13 @@
   </main>
   <footer class="footer"><div class="wrap footer-inner"><span><strong>Premios Yoguis</strong> · XV Festival de Cine Escolar 2026</span><span>Una celebración del cine creado en la escuela</span></div></footer>
   <section class="presenter" id="presenter" role="dialog" aria-modal="true" aria-label="Proyección de gala" aria-hidden="true">
-    <button class="stream-toggle" type="button" data-stream-toggle aria-pressed="true" aria-label="Ocultar pantallas de streaming" title="Ocultar pantallas de streaming"><span class="stream-icon" aria-hidden="true">◉</span><span class="stream-label">Streaming</span></button>
+    <button class="stream-toggle" type="button" data-stream-toggle aria-pressed="true" aria-label="Ocultar video temporal" title="Ocultar video temporal"><span class="stream-icon" aria-hidden="true">◉</span><span class="stream-label">Video temporal</span></button>
     <button class="fullscreen-presenter" type="button" aria-label="Activar pantalla completa" title="Pantalla completa" data-fullscreen>⛶</button>
     <button class="close-presenter" aria-label="Cerrar proyección" data-close>×</button>
     <div class="theater-stage">
       <div class="theater-valance" aria-hidden="true"></div><div class="theater-lights" aria-hidden="true"></div>
-      <div class="stream-monitor left" data-stream-panel hidden><iframe data-stream-frame data-stream-src="https://www.youtube.com/embed/TTiQdtAzgxU?autoplay=1&amp;mute=1&amp;playsinline=1&amp;rel=0" title="Transmisión en vivo, pantalla izquierda" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-      <div class="stream-monitor right" data-stream-panel hidden><iframe data-stream-frame data-stream-src="https://www.youtube.com/embed/TTiQdtAzgxU?autoplay=1&amp;mute=1&amp;playsinline=1&amp;rel=0" title="Transmisión en vivo, pantalla derecha" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+      <div class="stream-monitor left" data-stream-panel hidden><iframe data-stream-frame data-stream-src="https://www.youtube.com/embed/Nd5NsJjfN2I?autoplay=1&amp;mute=1&amp;playsinline=1&amp;rel=0&amp;list=RDNd5NsJjfN2I" title="Video temporal, pantalla izquierda" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+      <div class="stream-monitor right" data-stream-panel hidden><iframe data-stream-frame data-stream-src="https://www.youtube.com/embed/Nd5NsJjfN2I?mute=1&amp;playsinline=1&amp;rel=0&amp;list=RDNd5NsJjfN2I" title="Video temporal, pantalla derecha" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
       <div class="theater-curtain left" aria-hidden="true"></div><div class="theater-curtain right" aria-hidden="true"></div>
       <img class="stage-trophy left" src="estatuilla-yoguis.png" alt="" aria-hidden="true" />
       <img class="stage-trophy right" src="estatuilla-yoguis.png" alt="" aria-hidden="true" />
@@ -228,7 +227,8 @@
     let current=0,slideSwapTimer,controlsTimer,closeTimer,streamingEnabled=true;const presenter=document.querySelector('#presenter');const theaterStage=document.querySelector('.theater-stage');const streamPanels=[...document.querySelectorAll('[data-stream-panel]')];const streamToggle=document.querySelector('[data-stream-toggle]');
     function show(transition=false){const m=moments[current];const videoFrame=document.querySelector('#slide-video');const imageFrame=document.querySelector('#slide-image');const emptyFrame=document.querySelector('#slide-empty');const screen=document.querySelector('.theater-screen');const render=()=>{if(m.video){videoFrame.hidden=false;imageFrame.hidden=true;emptyFrame.hidden=true;if(videoFrame.src!==m.video)videoFrame.src=m.video}else if(m.image){videoFrame.hidden=true;videoFrame.src='about:blank';imageFrame.hidden=false;emptyFrame.hidden=true;imageFrame.src=m.image}else{videoFrame.hidden=true;videoFrame.src='about:blank';imageFrame.hidden=true;imageFrame.removeAttribute('src');emptyFrame.hidden=false}};clearTimeout(slideSwapTimer);if(transition){screen.classList.add('switching');slideSwapTimer=setTimeout(()=>{render();requestAnimationFrame(()=>screen.classList.remove('switching'))},190)}else{render();screen.classList.remove('switching')}document.querySelector('[data-prev]').disabled=current===0;document.querySelector('#stage-progress-fill').style.width=`${((current+1)/moments.length)*100}%`;document.querySelector('#stage-count').textContent=`${String(current+1).padStart(2,'0')} / ${String(moments.length).padStart(2,'0')}`}
     function revealControls(){presenter.classList.remove('controls-hidden');clearTimeout(controlsTimer);if(presenter.classList.contains('open')&&!presenter.classList.contains('finale'))controlsTimer=setTimeout(()=>presenter.classList.add('controls-hidden'),3200)}
-    function setStreaming(enabled){streamingEnabled=enabled;theaterStage.classList.toggle('stream-enabled',enabled);streamPanels.forEach(panel=>{const frame=panel.querySelector('[data-stream-frame]');panel.hidden=!enabled;const src=frame.dataset.streamSrc;if(enabled){if(frame.src!==src)frame.src=src}else if(frame.src!=='about:blank')frame.src='about:blank'});streamToggle.setAttribute('aria-pressed',String(enabled));const label=enabled?'Ocultar pantallas de streaming':'Mostrar pantallas de streaming';streamToggle.setAttribute('aria-label',label);streamToggle.title=label}
+    function setStreaming(enabled){streamingEnabled=enabled;theaterStage.classList.toggle('stream-enabled',enabled);const compact=window.matchMedia('(max-width:700px)').matches;streamPanels.forEach((panel,index)=>{const frame=panel.querySelector('[data-stream-frame]');const visible=enabled&&!(compact&&index===1);panel.hidden=!visible;const src=frame.dataset.streamSrc;if(visible){const url=new URL(src);if(location.protocol!=='file:'&&location.origin!=='null')url.searchParams.set('origin',location.origin);if(frame.src!==url.href)frame.src=url.href}else if(frame.src!=='about:blank')frame.src='about:blank'});streamToggle.setAttribute('aria-pressed',String(enabled));const label=enabled?'Ocultar video temporal':'Mostrar video temporal';streamToggle.setAttribute('aria-label',label);streamToggle.title=label}
+    window.matchMedia('(max-width:700px)').addEventListener('change',()=>{if(streamingEnabled)setStreaming(true)});
     function pauseStreaming(){streamPanels.forEach(panel=>{const frame=panel.querySelector('[data-stream-frame]');if(frame.src!=='about:blank')frame.src='about:blank'})}
     streamToggle.addEventListener('click',()=>{setStreaming(!streamingEnabled);revealControls()});
     function open(){clearTimeout(closeTimer);presenter.classList.remove('finale','closing','curtains-open','controls-hidden');setStreaming(streamingEnabled);current=0;show();presenter.classList.add('open');presenter.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';requestAnimationFrame(()=>requestAnimationFrame(()=>presenter.classList.add('curtains-open')));document.querySelector('[data-close]').focus();revealControls()}
